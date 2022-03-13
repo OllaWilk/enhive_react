@@ -2,23 +2,15 @@
 @import "./settings.scss";
 
 .h1 {
-    font-family: $handwriting-font;
+    font-family: $header-font;
     font-weight: $font-bold;
     font-size: 72px;
     line-height: 1.2;
- 
     text-transform: uppercase;
+    color: $color-light;
 
     span {
         color: $color-main;
-    }
-
-    @media (max-width: $screen-sm) {
-        font-size: 40px;
-    }
-
-    @media (max-width: $screen-md) {
-        font-size: 50px;
     }
 }
   
@@ -27,16 +19,7 @@
     font-size: 46px;
     font-weight: $font-semibold;
     text-transform: uppercase;
-    margin: 0 0 72px 0;
     color: $color-dark;
-
-    @media (max-width: $screen-sm) {
-        font-size: 30px;
-    }
-
-    @media (max-width: $screen-md) {
-        font-size: 30px;
-    }
 }
 
 .h3 {
@@ -52,4 +35,23 @@
     text-transform: uppercase;
     font-weight: $font-bold;
     color: $color-dark;
+}
+
+
+@media screen and (max-width: $screen-lg) {
+    .h1 {
+        font-size: 60px;
+    }
+    .h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: $screen-sm) {
+    .h1 {
+        font-size: 50px;
+    }
+    .h2 {
+        font-size: 25px;
+    }
 }

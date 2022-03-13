@@ -1,10 +1,13 @@
 @import "./settings.scss";
 
-
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,18 +19,30 @@ body {
   line-height: 1.7;
   font-weight: $font-normal;
   color: $color-dark;
-
   @media (max-width: $screen-md) {
     overflow-x: hidden;
   }
 }
 
+section {
+  padding: 4rem 6rem;
+  height: 100vh;
+  margin-top: 6vh;
+}
+
+#home {
+  background-color: gray;
+  opacity: .5;
+}
+
 .container {
   padding: 0;
+  margin: 4rem 6rem;
 }
 
 a, a:hover {
   text-decoration: none;
+  color: unset;
 }
 
 ul {
@@ -35,4 +50,64 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+/*Animation */
+
+.scale-up-ver-top {
+	-webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+
+
+
+/*Responsive*/
+
+@media screen and (max-width: $screen-md) {
+  .section {
+    padding: 4rem;
+  }
+  .container {
+    padding: 0;
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .section {
+    padding: 4rem 2rem;
+  }
+  .container {
+    padding: 0;
+    margin: 4rem 2rem;
+  }
 }

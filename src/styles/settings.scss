@@ -8,6 +8,10 @@ $color-danger: #e55039;
 $color-success: #59b66d;
 $transparent: transparent;
 
+$shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+
+
+
 /*fonts*/
 
 $header-font: 'Oswald', sans-serif;
@@ -22,7 +26,7 @@ $font-bold: 700;
 $base-size: 16px;
 
 /* Animation */
-$transition: all .3s;
+$transition: all .5s;
 
 /*Another*/
 $cornerSize: 25px;
