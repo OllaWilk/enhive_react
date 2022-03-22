@@ -1,0 +1,10 @@
+@import './../../styles/typography.scss';
+@import './../../styles/settings.scss';
+
+h3 {
+    @extend .h3;
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px solid $color-main;
+    padding: 2rem 0;
+}

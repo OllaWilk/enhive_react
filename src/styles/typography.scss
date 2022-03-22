@@ -20,10 +20,12 @@
     font-weight: $font-semibold;
     text-transform: uppercase;
     color: $color-dark;
+    border-top: 2px solid $color-main;
+    padding-top: 1rem;
 }
 
 .h3 {
-    font-size: 24px;
+    font-size: 34px;
     margin: 0 0 12;
     font-weight: $font-bold;
     text-transform: uppercase;

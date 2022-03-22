@@ -1,23 +1,13 @@
 import React from 'react'
-import { Header } from '../../containers'
+import { Header, Services } from '../../containers'
 
 function Home() {
+
   return (
-    <main>
+    <div>
       <Header />
-    <section id="home" >
-
-    </section>
-    <section id="about">
-
-    </section>
-    <section id="work">
-
-    </section>
-    <section id="contact">
-
-    </section>
-  </main>
+      <Services />
+    </div>
   )
 }
 
